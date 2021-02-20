@@ -45,7 +45,16 @@ How is password strength measured? Everyone has seen websites that force users t
 > - 1 Symbol
 > - 1 Number
 
-Users end up heeding these rules and create passwords like: `Boston99!` and `Sc00ter7`. Although these may seem like strong passwords, often they are not! Password strength can be measured in entropy bits. This is a fancy way of measuring how long it would take for hackers to `crack` your password.
+Users end up heeding these rules and create passwords like: `Boston99!` and `Sc00ter7`. Although these may seem like strong passwords, often they are not! Password strength can be measured in entropy bits. This is a fancy way of measuring how long it would take for hackers to `crack` your password. Entropy is calculated using the following formula:
 
+<p align="center">
+  <img src="https://latex.codecogs.com/png.latex?\dpi{150}&space;\fn_cm&space;S&space;=&space;\log_{2}{N^{L}}">
+</p>
 
+`S` - strength of the password
 
+`N` - number of possible symbols (uppercase, lowercase, numbers, etc)
+
+`L` - length of the password
+
+![graph](password_strength.jpg)
