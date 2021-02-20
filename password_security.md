@@ -9,11 +9,12 @@ In order to better understand how passwords are hacked we need to first understa
 **Plaintext**
 
 ```
-username		password
+username    password
 
 zack        p4ssw0rd
-bob         432D]#$snx
-alice       boston12!				
+bob         432D]#$s3n
+alice       boston12!
+charlie     correcthorsebatterystaple
 ```
 
 This is an exmaple of a plaintext password file. If a malicious "hacker" gained access to this file, they would IMMEDIATELY have access to every account. This is extremely unsafe!
@@ -21,20 +22,30 @@ This is an exmaple of a plaintext password file. If a malicious "hacker" gained 
 **Hashed & Salted**
 
 ```
-username		password
+username    password
 
 zack        $1$.HT8T7Ql$Kl4QAVs7LkvF7YfvEuafn/
-bob         $1$hZBXX3ib$Jmqw2.3Nhr.wl.3zOEni/0
-alice       $1$MjjlMQIu$5LsEz6r2/9nqFiNHpsBG91	
+bob         $1$7CRHLxjL$Lsd3vUJt38f1S0zEqmo6E0
+alice       $1$MjjlMQIu$5LsEz6r2/9nqFiNHpsBG91
+charlie     $1$mFHiQMto$TdC0zUlo8IA7n3vjbr9r5/
 ```
 
 This is example of a hashed & salted password file. The previous passwords above were encrypted using the `MD5 Crypt` algorithm. If a malicious "hacker" gained access to this file, they would have to `crack` each password before gaining access to each account.
 
-
-
 This document will not go into further detail about hashing algorithms. The main takeaway is that most companies are NOT storing `plaintext` passwords and therefore when a company is hacked and passwords are leaked that to does necesarily mean that all passwords are `cracked`.
 
+## Password Strength
 
+How is password strength measured? Everyone has seen websites that force users to follow certain rules:
+
+> Your password must:
+>
+> - Atleast 8 characters
+> - 1 Uppercase Letter
+> - 1 Symbol
+> - 1 Number
+
+Users end up heeding these rules and create passwords like: `Boston99!` and `Sc00ter7`. Although these may seem like strong passwords, often they are not! Password strength can be measured in entropy bits. This is a fancy way of measuring how long it would take for hackers to `crack` your password.
 
 
 
