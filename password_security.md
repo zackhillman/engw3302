@@ -11,9 +11,9 @@ In order to better understand how passwords are hacked we need to first understa
 ```
 username		password
 
-zack				p4ssw0rd
-bob					432D]#$snx
-alice				boston12!				
+zack        p4ssw0rd
+bob         432D]#$snx
+alice       boston12!				
 ```
 
 This is an exmaple of a plaintext password file. If a malicious "hacker" gained access to this file, they would IMMEDIATELY have access to every account. This is extremely unsafe!
@@ -23,9 +23,9 @@ This is an exmaple of a plaintext password file. If a malicious "hacker" gained 
 ```
 username		password
 
-zack				$1$.HT8T7Ql$Kl4QAVs7LkvF7YfvEuafn/
-bob					$1$hZBXX3ib$Jmqw2.3Nhr.wl.3zOEni/0
-alice				$1$MjjlMQIu$5LsEz6r2/9nqFiNHpsBG91	
+zack        $1$.HT8T7Ql$Kl4QAVs7LkvF7YfvEuafn/
+bob         $1$hZBXX3ib$Jmqw2.3Nhr.wl.3zOEni/0
+alice       $1$MjjlMQIu$5LsEz6r2/9nqFiNHpsBG91	
 ```
 
 This is example of a hashed & salted password file. The previous passwords above were encrypted using the `MD5 Crypt` algorithm. If a malicious "hacker" gained access to this file, they would have to `crack` each password before gaining access to each account.
