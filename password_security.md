@@ -57,4 +57,7 @@ Users end up heeding these rules and create passwords like: `Boston99!` and `Sc0
 
 `L` - length of the password
 
-![graph](password_strength.jpg)
+<p align="center">
+  <img src="password_strength.png" width="80%" height="80%">
+</p>
+
